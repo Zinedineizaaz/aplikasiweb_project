@@ -1,0 +1,1352 @@
+[
+    {
+        "id": "FLIGHT-0001",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-01-28 23:34:58",
+        "jadwal_kedatangan": "2025-01-29 01:08:58",
+        "estimasi_penerbangan": "94 minutes",
+        "harga": 886000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0002",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-02-25 06:44:24",
+        "jadwal_kedatangan": "2025-02-25 08:52:24",
+        "estimasi_penerbangan": "128 minutes",
+        "harga": 2257000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0003",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-02-28 22:42:46",
+        "jadwal_kedatangan": "2025-02-28 23:34:46",
+        "estimasi_penerbangan": "52 minutes",
+        "harga": 2424000.0,
+        "destinasi": "Yogyakarta"
+    },
+    {
+        "id": "FLIGHT-0004",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-16 15:31:04",
+        "jadwal_kedatangan": "2025-04-17 01:14:04",
+        "estimasi_penerbangan": "583 minutes",
+        "harga": 1194000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0005",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2024-12-26 15:06:08",
+        "jadwal_kedatangan": "2024-12-26 19:22:08",
+        "estimasi_penerbangan": "256 minutes",
+        "harga": 1526000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0006",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-01 13:16:33",
+        "jadwal_kedatangan": "2025-03-01 21:59:33",
+        "estimasi_penerbangan": "523 minutes",
+        "harga": 2070000.0,
+        "destinasi": "Malang"
+    },
+    {
+        "id": "FLIGHT-0007",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-02-03 04:40:36",
+        "jadwal_kedatangan": "2025-02-03 06:06:36",
+        "estimasi_penerbangan": "86 minutes",
+        "harga": 917000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0008",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-21 00:44:07",
+        "jadwal_kedatangan": "2025-01-21 02:59:07",
+        "estimasi_penerbangan": "135 minutes",
+        "harga": 1974000.0,
+        "destinasi": "Pekanbaru"
+    },
+    {
+        "id": "FLIGHT-0009",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-01-04 15:35:14",
+        "jadwal_kedatangan": "2025-01-05 01:21:14",
+        "estimasi_penerbangan": "586 minutes",
+        "harga": 2710000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0010",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-01-14 12:48:16",
+        "jadwal_kedatangan": "2025-01-14 18:53:16",
+        "estimasi_penerbangan": "365 minutes",
+        "harga": 2097000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0011",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-26 07:50:05",
+        "jadwal_kedatangan": "2025-04-26 11:57:05",
+        "estimasi_penerbangan": "247 minutes",
+        "harga": 1459000.0,
+        "destinasi": "Padang"
+    },
+    {
+        "id": "FLIGHT-0012",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-03-12 03:57:03",
+        "jadwal_kedatangan": "2025-03-12 08:33:03",
+        "estimasi_penerbangan": "276 minutes",
+        "harga": 1650000.0,
+        "destinasi": "Surabaya"
+    },
+    {
+        "id": "FLIGHT-0013",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-17 14:00:11",
+        "jadwal_kedatangan": "2025-04-17 20:41:11",
+        "estimasi_penerbangan": "401 minutes",
+        "harga": 984000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0014",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-03-07 13:08:04",
+        "jadwal_kedatangan": "2025-03-07 20:47:04",
+        "estimasi_penerbangan": "459 minutes",
+        "harga": 2417000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0015",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-01-18 13:34:31",
+        "jadwal_kedatangan": "2025-01-18 23:29:31",
+        "estimasi_penerbangan": "595 minutes",
+        "harga": 751000.0,
+        "destinasi": "Semarang"
+    },
+    {
+        "id": "FLIGHT-0016",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-07 11:58:09",
+        "jadwal_kedatangan": "2025-04-07 14:13:09",
+        "estimasi_penerbangan": "135 minutes",
+        "harga": 1504000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0017",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2024-12-28 19:03:15",
+        "jadwal_kedatangan": "2024-12-29 03:33:15",
+        "estimasi_penerbangan": "510 minutes",
+        "harga": 1733000.0,
+        "destinasi": "Pontianak"
+    },
+    {
+        "id": "FLIGHT-0018",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-17 00:04:30",
+        "jadwal_kedatangan": "2025-01-17 04:40:30",
+        "estimasi_penerbangan": "276 minutes",
+        "harga": 928000.0,
+        "destinasi": "Surabaya"
+    },
+    {
+        "id": "FLIGHT-0019",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2024-12-31 02:27:23",
+        "jadwal_kedatangan": "2024-12-31 11:26:23",
+        "estimasi_penerbangan": "539 minutes",
+        "harga": 962000.0,
+        "destinasi": "Pontianak"
+    },
+    {
+        "id": "FLIGHT-0020",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-02-08 20:38:07",
+        "jadwal_kedatangan": "2025-02-09 04:47:07",
+        "estimasi_penerbangan": "489 minutes",
+        "harga": 1694000.0,
+        "destinasi": "Jayapura"
+    },
+    {
+        "id": "FLIGHT-0021",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-02-04 21:58:47",
+        "jadwal_kedatangan": "2025-02-04 23:15:47",
+        "estimasi_penerbangan": "77 minutes",
+        "harga": 2327000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0022",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-13 14:49:30",
+        "jadwal_kedatangan": "2025-03-13 22:17:30",
+        "estimasi_penerbangan": "448 minutes",
+        "harga": 782000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0023",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-01 21:40:41",
+        "jadwal_kedatangan": "2025-04-02 00:33:41",
+        "estimasi_penerbangan": "173 minutes",
+        "harga": 1308000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0024",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-20 22:06:28",
+        "jadwal_kedatangan": "2025-04-21 02:16:28",
+        "estimasi_penerbangan": "250 minutes",
+        "harga": 693000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0025",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-02-11 22:59:03",
+        "jadwal_kedatangan": "2025-02-12 02:41:03",
+        "estimasi_penerbangan": "222 minutes",
+        "harga": 1076000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0026",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-03 09:01:20",
+        "jadwal_kedatangan": "2025-04-03 12:28:20",
+        "estimasi_penerbangan": "207 minutes",
+        "harga": 2390000.0,
+        "destinasi": "Balikpapan"
+    },
+    {
+        "id": "FLIGHT-0027",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-06 21:57:08",
+        "jadwal_kedatangan": "2025-04-07 06:41:08",
+        "estimasi_penerbangan": "524 minutes",
+        "harga": 2708000.0,
+        "destinasi": "Balikpapan"
+    },
+    {
+        "id": "FLIGHT-0028",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-11 20:53:40",
+        "jadwal_kedatangan": "2025-04-12 02:09:40",
+        "estimasi_penerbangan": "316 minutes",
+        "harga": 1444000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0029",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-04-02 08:58:49",
+        "jadwal_kedatangan": "2025-04-02 11:13:49",
+        "estimasi_penerbangan": "135 minutes",
+        "harga": 636000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0030",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-14 06:12:20",
+        "jadwal_kedatangan": "2025-04-14 12:20:20",
+        "estimasi_penerbangan": "368 minutes",
+        "harga": 1058000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0031",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-02-17 09:18:32",
+        "jadwal_kedatangan": "2025-02-17 09:51:32",
+        "estimasi_penerbangan": "33 minutes",
+        "harga": 530000.0,
+        "destinasi": "Palembang"
+    },
+    {
+        "id": "FLIGHT-0032",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-26 15:58:24",
+        "jadwal_kedatangan": "2025-04-26 17:26:24",
+        "estimasi_penerbangan": "88 minutes",
+        "harga": 2626000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0033",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-12 22:45:49",
+        "jadwal_kedatangan": "2025-03-13 05:06:49",
+        "estimasi_penerbangan": "381 minutes",
+        "harga": 2796000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0034",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-01-19 20:43:09",
+        "jadwal_kedatangan": "2025-01-20 00:17:09",
+        "estimasi_penerbangan": "214 minutes",
+        "harga": 755000.0,
+        "destinasi": "Padang"
+    },
+    {
+        "id": "FLIGHT-0035",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-01-16 11:39:17",
+        "jadwal_kedatangan": "2025-01-16 19:28:17",
+        "estimasi_penerbangan": "469 minutes",
+        "harga": 1823000.0,
+        "destinasi": "Pekanbaru"
+    },
+    {
+        "id": "FLIGHT-0036",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-03-02 03:31:50",
+        "jadwal_kedatangan": "2025-03-02 12:48:50",
+        "estimasi_penerbangan": "557 minutes",
+        "harga": 2200000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0037",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2024-12-20 04:55:32",
+        "jadwal_kedatangan": "2024-12-20 08:25:32",
+        "estimasi_penerbangan": "210 minutes",
+        "harga": 1354000.0,
+        "destinasi": "Semarang"
+    },
+    {
+        "id": "FLIGHT-0038",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-23 22:41:33",
+        "jadwal_kedatangan": "2025-01-24 03:14:33",
+        "estimasi_penerbangan": "273 minutes",
+        "harga": 2448000.0,
+        "destinasi": "Solo"
+    },
+    {
+        "id": "FLIGHT-0039",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-03-12 17:13:51",
+        "jadwal_kedatangan": "2025-03-12 22:27:51",
+        "estimasi_penerbangan": "314 minutes",
+        "harga": 1084000.0,
+        "destinasi": "Balikpapan"
+    },
+    {
+        "id": "FLIGHT-0040",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-30 07:15:34",
+        "jadwal_kedatangan": "2025-01-30 13:53:34",
+        "estimasi_penerbangan": "398 minutes",
+        "harga": 2727000.0,
+        "destinasi": "Balikpapan"
+    },
+    {
+        "id": "FLIGHT-0041",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-16 20:30:24",
+        "jadwal_kedatangan": "2025-03-17 02:12:24",
+        "estimasi_penerbangan": "342 minutes",
+        "harga": 1357000.0,
+        "destinasi": "Solo"
+    },
+    {
+        "id": "FLIGHT-0042",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-11 10:45:32",
+        "jadwal_kedatangan": "2025-04-11 14:55:32",
+        "estimasi_penerbangan": "250 minutes",
+        "harga": 751000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0043",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2024-12-27 03:29:35",
+        "jadwal_kedatangan": "2024-12-27 13:15:35",
+        "estimasi_penerbangan": "586 minutes",
+        "harga": 2093000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0044",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-01-06 02:24:52",
+        "jadwal_kedatangan": "2025-01-06 11:20:52",
+        "estimasi_penerbangan": "536 minutes",
+        "harga": 840000.0,
+        "destinasi": "Padang"
+    },
+    {
+        "id": "FLIGHT-0045",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-25 21:52:14",
+        "jadwal_kedatangan": "2025-04-26 00:29:14",
+        "estimasi_penerbangan": "157 minutes",
+        "harga": 1789000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0046",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-03 19:59:08",
+        "jadwal_kedatangan": "2025-03-03 23:28:08",
+        "estimasi_penerbangan": "209 minutes",
+        "harga": 2001000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0047",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-19 07:34:44",
+        "jadwal_kedatangan": "2025-03-19 16:41:44",
+        "estimasi_penerbangan": "547 minutes",
+        "harga": 910000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0048",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-02-10 04:09:40",
+        "jadwal_kedatangan": "2025-02-10 10:47:40",
+        "estimasi_penerbangan": "398 minutes",
+        "harga": 710000.0,
+        "destinasi": "Jayapura"
+    },
+    {
+        "id": "FLIGHT-0049",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-01-25 15:21:52",
+        "jadwal_kedatangan": "2025-01-25 16:00:52",
+        "estimasi_penerbangan": "39 minutes",
+        "harga": 2715000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0050",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-04-26 20:59:19",
+        "jadwal_kedatangan": "2025-04-27 02:25:19",
+        "estimasi_penerbangan": "326 minutes",
+        "harga": 1406000.0,
+        "destinasi": "Yogyakarta"
+    },
+    {
+        "id": "FLIGHT-0051",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-28 11:04:20",
+        "jadwal_kedatangan": "2025-04-28 18:02:20",
+        "estimasi_penerbangan": "418 minutes",
+        "harga": 1873000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0052",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-04-11 13:48:23",
+        "jadwal_kedatangan": "2025-04-11 17:31:23",
+        "estimasi_penerbangan": "223 minutes",
+        "harga": 1134000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0053",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-16 13:14:33",
+        "jadwal_kedatangan": "2025-01-16 17:21:33",
+        "estimasi_penerbangan": "247 minutes",
+        "harga": 2408000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0054",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-07 06:07:09",
+        "jadwal_kedatangan": "2025-03-07 15:52:09",
+        "estimasi_penerbangan": "585 minutes",
+        "harga": 2473000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0055",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-06 23:45:46",
+        "jadwal_kedatangan": "2025-03-07 03:31:46",
+        "estimasi_penerbangan": "226 minutes",
+        "harga": 1970000.0,
+        "destinasi": "Semarang"
+    },
+    {
+        "id": "FLIGHT-0056",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-25 05:28:39",
+        "jadwal_kedatangan": "2025-04-25 09:52:39",
+        "estimasi_penerbangan": "264 minutes",
+        "harga": 714000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0057",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-27 13:22:09",
+        "jadwal_kedatangan": "2025-04-27 17:19:09",
+        "estimasi_penerbangan": "237 minutes",
+        "harga": 913000.0,
+        "destinasi": "Jayapura"
+    },
+    {
+        "id": "FLIGHT-0058",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-26 14:21:44",
+        "jadwal_kedatangan": "2025-01-26 18:58:44",
+        "estimasi_penerbangan": "277 minutes",
+        "harga": 520000.0,
+        "destinasi": "Malang"
+    },
+    {
+        "id": "FLIGHT-0059",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-25 04:59:01",
+        "jadwal_kedatangan": "2025-01-25 08:21:01",
+        "estimasi_penerbangan": "202 minutes",
+        "harga": 2592000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0060",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-12 05:08:30",
+        "jadwal_kedatangan": "2025-01-12 11:56:30",
+        "estimasi_penerbangan": "408 minutes",
+        "harga": 607000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0061",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-24 11:48:00",
+        "jadwal_kedatangan": "2025-01-24 15:02:00",
+        "estimasi_penerbangan": "194 minutes",
+        "harga": 2849000.0,
+        "destinasi": "Pekanbaru"
+    },
+    {
+        "id": "FLIGHT-0062",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-03-07 04:01:02",
+        "jadwal_kedatangan": "2025-03-07 12:04:02",
+        "estimasi_penerbangan": "483 minutes",
+        "harga": 2209000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0063",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-02-20 00:12:11",
+        "jadwal_kedatangan": "2025-02-20 02:52:11",
+        "estimasi_penerbangan": "160 minutes",
+        "harga": 795000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0064",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-15 18:48:12",
+        "jadwal_kedatangan": "2025-04-15 23:39:12",
+        "estimasi_penerbangan": "291 minutes",
+        "harga": 743000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0065",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-08 23:48:53",
+        "jadwal_kedatangan": "2025-04-09 01:19:53",
+        "estimasi_penerbangan": "91 minutes",
+        "harga": 2679000.0,
+        "destinasi": "Padang"
+    },
+    {
+        "id": "FLIGHT-0066",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-02-12 20:04:53",
+        "jadwal_kedatangan": "2025-02-12 23:45:53",
+        "estimasi_penerbangan": "221 minutes",
+        "harga": 1700000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0067",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-02-08 11:34:59",
+        "jadwal_kedatangan": "2025-02-08 18:25:59",
+        "estimasi_penerbangan": "411 minutes",
+        "harga": 2296000.0,
+        "destinasi": "Yogyakarta"
+    },
+    {
+        "id": "FLIGHT-0068",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-25 00:53:48",
+        "jadwal_kedatangan": "2025-01-25 02:50:48",
+        "estimasi_penerbangan": "117 minutes",
+        "harga": 791000.0,
+        "destinasi": "Malang"
+    },
+    {
+        "id": "FLIGHT-0069",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-02-12 07:42:42",
+        "jadwal_kedatangan": "2025-02-12 14:54:42",
+        "estimasi_penerbangan": "432 minutes",
+        "harga": 1843000.0,
+        "destinasi": "Solo"
+    },
+    {
+        "id": "FLIGHT-0070",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-07 08:32:36",
+        "jadwal_kedatangan": "2025-03-07 15:12:36",
+        "estimasi_penerbangan": "400 minutes",
+        "harga": 509000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0071",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2024-12-23 21:59:09",
+        "jadwal_kedatangan": "2024-12-24 06:20:09",
+        "estimasi_penerbangan": "501 minutes",
+        "harga": 1506000.0,
+        "destinasi": "Padang"
+    },
+    {
+        "id": "FLIGHT-0072",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-11 20:28:24",
+        "jadwal_kedatangan": "2025-03-12 05:36:24",
+        "estimasi_penerbangan": "548 minutes",
+        "harga": 1949000.0,
+        "destinasi": "Solo"
+    },
+    {
+        "id": "FLIGHT-0073",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-02 02:47:26",
+        "jadwal_kedatangan": "2025-01-02 04:12:26",
+        "estimasi_penerbangan": "85 minutes",
+        "harga": 1938000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0074",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-18 03:22:30",
+        "jadwal_kedatangan": "2025-01-18 07:46:30",
+        "estimasi_penerbangan": "264 minutes",
+        "harga": 945000.0,
+        "destinasi": "Palembang"
+    },
+    {
+        "id": "FLIGHT-0075",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-27 09:42:06",
+        "jadwal_kedatangan": "2025-04-27 11:54:06",
+        "estimasi_penerbangan": "132 minutes",
+        "harga": 1489000.0,
+        "destinasi": "Pontianak"
+    },
+    {
+        "id": "FLIGHT-0076",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-07 07:40:51",
+        "jadwal_kedatangan": "2025-01-07 16:57:51",
+        "estimasi_penerbangan": "557 minutes",
+        "harga": 2454000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0077",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-02-10 18:41:49",
+        "jadwal_kedatangan": "2025-02-11 03:36:49",
+        "estimasi_penerbangan": "535 minutes",
+        "harga": 1859000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0078",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-18 08:38:55",
+        "jadwal_kedatangan": "2025-01-18 12:46:55",
+        "estimasi_penerbangan": "248 minutes",
+        "harga": 927000.0,
+        "destinasi": "Malang"
+    },
+    {
+        "id": "FLIGHT-0079",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-14 20:25:20",
+        "jadwal_kedatangan": "2025-03-15 00:36:20",
+        "estimasi_penerbangan": "251 minutes",
+        "harga": 1723000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0080",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-04 14:34:02",
+        "jadwal_kedatangan": "2025-03-04 22:20:02",
+        "estimasi_penerbangan": "466 minutes",
+        "harga": 1131000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0081",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-11 20:03:30",
+        "jadwal_kedatangan": "2025-01-12 00:36:30",
+        "estimasi_penerbangan": "273 minutes",
+        "harga": 1408000.0,
+        "destinasi": "Pontianak"
+    },
+    {
+        "id": "FLIGHT-0082",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-02-24 13:49:28",
+        "jadwal_kedatangan": "2025-02-24 23:44:28",
+        "estimasi_penerbangan": "595 minutes",
+        "harga": 963000.0,
+        "destinasi": "Surabaya"
+    },
+    {
+        "id": "FLIGHT-0083",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-26 02:43:30",
+        "jadwal_kedatangan": "2025-03-26 08:05:30",
+        "estimasi_penerbangan": "322 minutes",
+        "harga": 595000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0084",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-02-13 05:27:08",
+        "jadwal_kedatangan": "2025-02-13 07:25:08",
+        "estimasi_penerbangan": "118 minutes",
+        "harga": 2417000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0085",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2024-12-28 05:40:09",
+        "jadwal_kedatangan": "2024-12-28 08:12:09",
+        "estimasi_penerbangan": "152 minutes",
+        "harga": 2375000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0086",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-11 02:19:32",
+        "jadwal_kedatangan": "2025-04-11 04:09:32",
+        "estimasi_penerbangan": "110 minutes",
+        "harga": 592000.0,
+        "destinasi": "Semarang"
+    },
+    {
+        "id": "FLIGHT-0087",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-02-21 04:35:24",
+        "jadwal_kedatangan": "2025-02-21 10:07:24",
+        "estimasi_penerbangan": "332 minutes",
+        "harga": 838000.0,
+        "destinasi": "Balikpapan"
+    },
+    {
+        "id": "FLIGHT-0088",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-03-22 06:45:12",
+        "jadwal_kedatangan": "2025-03-22 10:21:12",
+        "estimasi_penerbangan": "216 minutes",
+        "harga": 956000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0089",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-21 05:05:47",
+        "jadwal_kedatangan": "2025-01-21 07:20:47",
+        "estimasi_penerbangan": "135 minutes",
+        "harga": 528000.0,
+        "destinasi": "Jayapura"
+    },
+    {
+        "id": "FLIGHT-0090",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-30 06:05:24",
+        "jadwal_kedatangan": "2025-01-30 12:31:24",
+        "estimasi_penerbangan": "386 minutes",
+        "harga": 1351000.0,
+        "destinasi": "Padang"
+    },
+    {
+        "id": "FLIGHT-0091",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-07 05:49:43",
+        "jadwal_kedatangan": "2025-04-07 10:52:43",
+        "estimasi_penerbangan": "303 minutes",
+        "harga": 721000.0,
+        "destinasi": "Surabaya"
+    },
+    {
+        "id": "FLIGHT-0092",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-02-05 12:18:54",
+        "jadwal_kedatangan": "2025-02-05 18:24:54",
+        "estimasi_penerbangan": "366 minutes",
+        "harga": 2085000.0,
+        "destinasi": "Jayapura"
+    },
+    {
+        "id": "FLIGHT-0093",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-14 03:39:09",
+        "jadwal_kedatangan": "2025-03-14 12:03:09",
+        "estimasi_penerbangan": "504 minutes",
+        "harga": 2686000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0094",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-03-06 00:27:19",
+        "jadwal_kedatangan": "2025-03-06 10:17:19",
+        "estimasi_penerbangan": "590 minutes",
+        "harga": 929000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0095",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-03-07 22:43:05",
+        "jadwal_kedatangan": "2025-03-08 01:55:05",
+        "estimasi_penerbangan": "192 minutes",
+        "harga": 1478000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0096",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-06 09:15:47",
+        "jadwal_kedatangan": "2025-04-06 09:55:47",
+        "estimasi_penerbangan": "40 minutes",
+        "harga": 2668000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0097",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-24 11:28:55",
+        "jadwal_kedatangan": "2025-04-24 18:08:55",
+        "estimasi_penerbangan": "400 minutes",
+        "harga": 569000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0098",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2024-12-27 09:11:51",
+        "jadwal_kedatangan": "2024-12-27 18:12:51",
+        "estimasi_penerbangan": "541 minutes",
+        "harga": 958000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0099",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-02-04 12:51:19",
+        "jadwal_kedatangan": "2025-02-04 15:01:19",
+        "estimasi_penerbangan": "130 minutes",
+        "harga": 2325000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0100",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-04-14 08:51:22",
+        "jadwal_kedatangan": "2025-04-14 12:58:22",
+        "estimasi_penerbangan": "247 minutes",
+        "harga": 2354000.0,
+        "destinasi": "Pontianak"
+    },
+    {
+        "id": "FLIGHT-0101",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-17 19:38:01",
+        "jadwal_kedatangan": "2025-04-17 21:12:01",
+        "estimasi_penerbangan": "94 minutes",
+        "harga": 856000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0102",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-03-31 03:44:54",
+        "jadwal_kedatangan": "2025-03-31 11:24:54",
+        "estimasi_penerbangan": "460 minutes",
+        "harga": 912000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0103",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-02-04 21:26:02",
+        "jadwal_kedatangan": "2025-02-05 04:19:02",
+        "estimasi_penerbangan": "413 minutes",
+        "harga": 1694000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0104",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-02-17 15:59:48",
+        "jadwal_kedatangan": "2025-02-17 21:08:48",
+        "estimasi_penerbangan": "309 minutes",
+        "harga": 2944000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0105",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-02-21 19:58:57",
+        "jadwal_kedatangan": "2025-02-22 01:12:57",
+        "estimasi_penerbangan": "314 minutes",
+        "harga": 555000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0106",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-02-12 13:14:29",
+        "jadwal_kedatangan": "2025-02-12 14:28:29",
+        "estimasi_penerbangan": "74 minutes",
+        "harga": 2549000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0107",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-10 10:12:55",
+        "jadwal_kedatangan": "2025-01-10 20:10:55",
+        "estimasi_penerbangan": "598 minutes",
+        "harga": 619000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0108",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-02-03 05:37:18",
+        "jadwal_kedatangan": "2025-02-03 10:33:18",
+        "estimasi_penerbangan": "296 minutes",
+        "harga": 1855000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0109",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-20 14:18:02",
+        "jadwal_kedatangan": "2025-04-20 19:00:02",
+        "estimasi_penerbangan": "282 minutes",
+        "harga": 2624000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0110",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-20 13:37:31",
+        "jadwal_kedatangan": "2025-04-20 18:08:31",
+        "estimasi_penerbangan": "271 minutes",
+        "harga": 2231000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0111",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-04-06 12:55:11",
+        "jadwal_kedatangan": "2025-04-06 15:36:11",
+        "estimasi_penerbangan": "161 minutes",
+        "harga": 2105000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0112",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-01-05 16:34:09",
+        "jadwal_kedatangan": "2025-01-05 21:54:09",
+        "estimasi_penerbangan": "320 minutes",
+        "harga": 1731000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0113",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-03-08 22:36:19",
+        "jadwal_kedatangan": "2025-03-09 01:05:19",
+        "estimasi_penerbangan": "149 minutes",
+        "harga": 2486000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0114",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-02-26 09:39:05",
+        "jadwal_kedatangan": "2025-02-26 10:56:05",
+        "estimasi_penerbangan": "77 minutes",
+        "harga": 1711000.0,
+        "destinasi": "Banjarmasin"
+    },
+    {
+        "id": "FLIGHT-0115",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-02-06 20:19:16",
+        "jadwal_kedatangan": "2025-02-06 21:46:16",
+        "estimasi_penerbangan": "87 minutes",
+        "harga": 1217000.0,
+        "destinasi": "Semarang"
+    },
+    {
+        "id": "FLIGHT-0116",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-02-06 23:58:14",
+        "jadwal_kedatangan": "2025-02-07 05:30:14",
+        "estimasi_penerbangan": "332 minutes",
+        "harga": 1314000.0,
+        "destinasi": "Semarang"
+    },
+    {
+        "id": "FLIGHT-0117",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-21 03:30:19",
+        "jadwal_kedatangan": "2025-04-21 07:29:19",
+        "estimasi_penerbangan": "239 minutes",
+        "harga": 2736000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0118",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-01-01 22:11:14",
+        "jadwal_kedatangan": "2025-01-02 00:59:14",
+        "estimasi_penerbangan": "168 minutes",
+        "harga": 669000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0119",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-04-24 16:19:06",
+        "jadwal_kedatangan": "2025-04-24 22:00:06",
+        "estimasi_penerbangan": "341 minutes",
+        "harga": 2742000.0,
+        "destinasi": "Surabaya"
+    },
+    {
+        "id": "FLIGHT-0120",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-22 10:34:47",
+        "jadwal_kedatangan": "2025-01-22 11:27:47",
+        "estimasi_penerbangan": "53 minutes",
+        "harga": 1640000.0,
+        "destinasi": "Pontianak"
+    },
+    {
+        "id": "FLIGHT-0121",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-15 02:13:00",
+        "jadwal_kedatangan": "2025-04-15 05:16:00",
+        "estimasi_penerbangan": "183 minutes",
+        "harga": 2261000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0122",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2024-12-26 11:17:25",
+        "jadwal_kedatangan": "2024-12-26 16:21:25",
+        "estimasi_penerbangan": "304 minutes",
+        "harga": 2821000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0123",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-01-07 02:28:40",
+        "jadwal_kedatangan": "2025-01-07 03:34:40",
+        "estimasi_penerbangan": "66 minutes",
+        "harga": 2646000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0124",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-25 11:13:51",
+        "jadwal_kedatangan": "2025-04-25 19:13:51",
+        "estimasi_penerbangan": "480 minutes",
+        "harga": 2403000.0,
+        "destinasi": "Pontianak"
+    },
+    {
+        "id": "FLIGHT-0125",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-18 15:13:17",
+        "jadwal_kedatangan": "2025-04-18 22:49:17",
+        "estimasi_penerbangan": "456 minutes",
+        "harga": 1876000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0126",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2024-12-24 16:32:01",
+        "jadwal_kedatangan": "2024-12-24 17:37:01",
+        "estimasi_penerbangan": "65 minutes",
+        "harga": 2110000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0127",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-02-07 11:08:58",
+        "jadwal_kedatangan": "2025-02-07 14:12:58",
+        "estimasi_penerbangan": "184 minutes",
+        "harga": 1293000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0128",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-02-11 00:51:53",
+        "jadwal_kedatangan": "2025-02-11 03:58:53",
+        "estimasi_penerbangan": "187 minutes",
+        "harga": 897000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0129",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-07 00:59:43",
+        "jadwal_kedatangan": "2025-01-07 05:33:43",
+        "estimasi_penerbangan": "274 minutes",
+        "harga": 1159000.0,
+        "destinasi": "Malang"
+    },
+    {
+        "id": "FLIGHT-0130",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-03-31 01:18:24",
+        "jadwal_kedatangan": "2025-03-31 09:52:24",
+        "estimasi_penerbangan": "514 minutes",
+        "harga": 2879000.0,
+        "destinasi": "Solo"
+    },
+    {
+        "id": "FLIGHT-0131",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-11 06:28:43",
+        "jadwal_kedatangan": "2025-01-11 09:18:43",
+        "estimasi_penerbangan": "170 minutes",
+        "harga": 1604000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0132",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-19 00:20:12",
+        "jadwal_kedatangan": "2025-03-19 01:54:12",
+        "estimasi_penerbangan": "94 minutes",
+        "harga": 2466000.0,
+        "destinasi": "Padang"
+    },
+    {
+        "id": "FLIGHT-0133",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-02-21 23:11:30",
+        "jadwal_kedatangan": "2025-02-22 00:46:30",
+        "estimasi_penerbangan": "95 minutes",
+        "harga": 585000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0134",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-04-10 03:29:42",
+        "jadwal_kedatangan": "2025-04-10 07:20:42",
+        "estimasi_penerbangan": "231 minutes",
+        "harga": 1218000.0,
+        "destinasi": "Jayapura"
+    },
+    {
+        "id": "FLIGHT-0135",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-24 03:44:38",
+        "jadwal_kedatangan": "2025-03-24 05:01:38",
+        "estimasi_penerbangan": "77 minutes",
+        "harga": 1733000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0136",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-26 14:12:36",
+        "jadwal_kedatangan": "2025-01-26 21:39:36",
+        "estimasi_penerbangan": "447 minutes",
+        "harga": 2044000.0,
+        "destinasi": "Yogyakarta"
+    },
+    {
+        "id": "FLIGHT-0137",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-01-11 10:14:37",
+        "jadwal_kedatangan": "2025-01-11 13:36:37",
+        "estimasi_penerbangan": "202 minutes",
+        "harga": 1576000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0138",
+        "maskapai": "AirAsia",
+        "jadwal_keberangkatan": "2025-01-23 05:13:32",
+        "jadwal_kedatangan": "2025-01-23 14:42:32",
+        "estimasi_penerbangan": "569 minutes",
+        "harga": 2316000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0139",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2024-12-25 05:11:14",
+        "jadwal_kedatangan": "2024-12-25 15:07:14",
+        "estimasi_penerbangan": "596 minutes",
+        "harga": 1394000.0,
+        "destinasi": "Pekanbaru"
+    },
+    {
+        "id": "FLIGHT-0140",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-19 17:38:25",
+        "jadwal_kedatangan": "2025-04-19 18:47:25",
+        "estimasi_penerbangan": "69 minutes",
+        "harga": 2808000.0,
+        "destinasi": "Bandung"
+    },
+    {
+        "id": "FLIGHT-0141",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-03-31 19:39:34",
+        "jadwal_kedatangan": "2025-04-01 01:04:34",
+        "estimasi_penerbangan": "325 minutes",
+        "harga": 1725000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0142",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-03-04 10:55:25",
+        "jadwal_kedatangan": "2025-03-04 16:52:25",
+        "estimasi_penerbangan": "357 minutes",
+        "harga": 1208000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0143",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-30 02:14:04",
+        "jadwal_kedatangan": "2025-03-30 07:13:04",
+        "estimasi_penerbangan": "299 minutes",
+        "harga": 863000.0,
+        "destinasi": "Jakarta"
+    },
+    {
+        "id": "FLIGHT-0144",
+        "maskapai": "Lion Air",
+        "jadwal_keberangkatan": "2025-03-31 06:20:12",
+        "jadwal_kedatangan": "2025-03-31 15:13:12",
+        "estimasi_penerbangan": "533 minutes",
+        "harga": 1104000.0,
+        "destinasi": "Medan"
+    },
+    {
+        "id": "FLIGHT-0145",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-03-26 15:16:00",
+        "jadwal_kedatangan": "2025-03-26 18:42:00",
+        "estimasi_penerbangan": "206 minutes",
+        "harga": 2826000.0,
+        "destinasi": "Bali"
+    },
+    {
+        "id": "FLIGHT-0146",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-01-22 06:20:02",
+        "jadwal_kedatangan": "2025-01-22 07:16:02",
+        "estimasi_penerbangan": "56 minutes",
+        "harga": 2710000.0,
+        "destinasi": "Lombok"
+    },
+    {
+        "id": "FLIGHT-0147",
+        "maskapai": "Citilink",
+        "jadwal_keberangkatan": "2025-03-31 15:01:03",
+        "jadwal_kedatangan": "2025-03-31 19:57:03",
+        "estimasi_penerbangan": "296 minutes",
+        "harga": 1498000.0,
+        "destinasi": "Makassar"
+    },
+    {
+        "id": "FLIGHT-0148",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-04-05 10:46:59",
+        "jadwal_kedatangan": "2025-04-05 12:26:59",
+        "estimasi_penerbangan": "100 minutes",
+        "harga": 2834000.0,
+        "destinasi": "Batam"
+    },
+    {
+        "id": "FLIGHT-0149",
+        "maskapai": "Garuda Indonesia",
+        "jadwal_keberangkatan": "2025-04-20 08:14:04",
+        "jadwal_kedatangan": "2025-04-20 12:54:04",
+        "estimasi_penerbangan": "280 minutes",
+        "harga": 2360000.0,
+        "destinasi": "Manado"
+    },
+    {
+        "id": "FLIGHT-0150",
+        "maskapai": "Batik Air",
+        "jadwal_keberangkatan": "2025-02-09 09:15:43",
+        "jadwal_kedatangan": "2025-02-09 11:49:43",
+        "estimasi_penerbangan": "154 minutes",
+        "harga": 2777000.0,
+        "destinasi": "Surabaya"
+    }
+]
