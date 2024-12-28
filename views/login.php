@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h2>Login</h2>
+    <h2>Login baru</h2>
     <form method="POST" action="index.php?page=login">
         <?php
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
