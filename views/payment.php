@@ -1,24 +1,43 @@
 <?php
-require_once 'models/paymentModel.php';
-require_once 'controllers/PaymentController.php';
+require_once 'models/invoiceModel.php';
+require_once 'controllers/InvoiceController.php';
 
 $db = (new Database())->getConnection();
-$paymentModel = new PaymentModel($db);
-$paymentController = new PaymentController($paymentModel);
+$invoiceModel = new InvoiceModel($db);
+$invoiceController = new InvoiceController($invoiceModel);
 
-$booking_id = $_POST['booking_id'] ?? null;
-if (!$booking_id) {
-    die('ID pemesanan tidak ditemukan. Silakan kembali ke halaman sebelumnya.');
+// Ambil invoice_id dari URL atau formulir
+$invoice_id = $_GET['invoice_id'] ?? null;
+
+if (!$invoice_id) {
+    die('ID Invoice tidak ditemukan. Silakan coba lagi.');
 }
 
-// Proses data pemesanan
-$data = $paymentController->processPayment($booking_id);
-if (isset($data['error'])) {
-    die($data['error']);
+// Ambil data invoice berdasarkan invoice_id
+$invoice = $invoiceController->getInvoiceById($invoice_id);
+
+if (!$invoice) {
+    die('Detail invoice tidak ditemukan. Silakan coba lagi.');
 }
 
-$booking = $data['booking'];
-$flight = $data['flight'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Proses pembayaran
+    $payment_method = $_POST['payment_method'] ?? null;
+
+    if (!$payment_method) {
+        echo '<div class="alert alert-danger">Silakan pilih metode pembayaran.</div>';
+    } else {
+        // Perbarui status pembayaran di database
+        $paymentUpdated = $invoiceController->updatePaymentStatus($invoice_id, 'paid');
+
+        if ($paymentUpdated) {
+            header('Location: index.php?page=confirmation&invoice_id=' . $invoice_id);
+            exit;
+        } else {
+            echo '<div class="alert alert-danger">Gagal memperbarui status pembayaran. Silakan coba lagi.</div>';
+        }
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -33,29 +52,21 @@ $flight = $data['flight'];
     <h2>Pembayaran</h2>
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title"><?= htmlspecialchars($flight['maskapai']) ?></h5>
-            <p>Keberangkatan: <?= htmlspecialchars($flight['jadwal_keberangkatan']) ?></p>
-            <p>Tujuan: <?= htmlspecialchars($flight['destinasi']) ?></p>
-            <p>Harga: Rp <?= number_format($flight['harga'], 2, ',', '.') ?></p>
+            <h5 class="card-title">Invoice #<?= htmlspecialchars($invoice['id']) ?></h5>
+            <p><strong>Total Harga:</strong> Rp <?= number_format($invoice['total_price'], 2, ',', '.') ?></p>
+            <form method="POST">
+                <div class="mb-3">
+                    <label for="payment_method" class="form-label">Metode Pembayaran</label>
+                    <select id="payment_method" name="payment_method" class="form-select" required>
+                        <option value="">Pilih Metode</option>
+                        <option value="credit_card">Kartu Kredit</option>
+                        <option value="bank_transfer">Transfer Bank</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Bayar</button>
+            </form>
         </div>
     </div>
-    <form method="POST" action="index.php?page=invoice">
-        <input type="hidden" name="booking_id" value="<?= htmlspecialchars($booking['id']) ?>">
-        <input type="hidden" name="amount" value="<?= htmlspecialchars($flight['harga']) ?>">
-        <div class="mb-3">
-            <label for="payment_method" class="form-label">Metode Pembayaran</label>
-            <select id="payment_method" name="payment_method" class="form-select" required>
-                <option value="">Pilih Metode</option>
-                <option value="credit_card">Kartu Kredit</option>
-                <option value="bank_transfer">Transfer Bank</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label for="card_number" class="form-label">Nomor Kartu Kredit</label>
-            <input type="text" id="card_number" name="card_number" class="form-control" placeholder="16 digit" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Bayar</button>
-    </form>
 </div>
 </body>
 </html>

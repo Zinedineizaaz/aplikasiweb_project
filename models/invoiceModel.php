@@ -11,16 +11,42 @@ class InvoiceModel {
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':booking_id', $booking_id);
         $stmt->execute();
-        var_dump($stmt->errorInfo()); // Tambahkan ini
+    
         return $stmt->fetch(PDO::FETCH_ASSOC);
-    }
+    }    
 
-    public function createInvoice($booking_id, $total_price) {
-        $query = "INSERT INTO invoices (booking_id, total_price) VALUES (:booking_id, :total_price)";
+    public function createInvoice($booking_id, $total_price, $user_id) {
+        $query = "INSERT INTO invoices (booking_id, total_price, user_id) VALUES (:booking_id, :total_price, :user_id)";
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':booking_id', $booking_id);
         $stmt->bindParam(':total_price', $total_price);
+        $stmt->bindParam(':user_id', $user_id);
         return $stmt->execute();
     }
+
+    public function getTotalPriceByBookingId($booking_id) {
+        $query = "
+            SELECT f.harga
+            FROM bookings b
+            JOIN flights f ON b.flight_id = f.id
+            WHERE b.id = :booking_id
+        ";
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':booking_id', $booking_id);
+        $stmt->execute();
+    
+        // Ambil harga
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result['harga'] ?? 0; // Kembalikan harga atau 0 jika tidak ditemukan
+    }
+
+    public function updatePaymentStatus($invoice_id, $status) {
+        $query = "UPDATE invoices SET payment_status = :status WHERE id = :invoice_id";
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':status', $status);
+        $stmt->bindParam(':invoice_id', $invoice_id);
+        return $stmt->execute();
+    }
+    
 }
 ?>

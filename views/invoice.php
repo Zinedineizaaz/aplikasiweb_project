@@ -7,16 +7,34 @@ $invoiceModel = new InvoiceModel($db);
 $invoiceController = new InvoiceController($invoiceModel);
 
 $booking_id = $_POST['booking_id'] ?? null;
+$user_id = $_SESSION['user_id'] ?? null;
 
 if (!$booking_id) {
     die('ID pemesanan tidak ditemukan. Silakan kembali ke halaman sebelumnya.');
 }
 
+if (!$user_id) {
+    die('User ID tidak ditemukan. Silakan login kembali.');
+}
+
 // Ambil data invoice dari tabel invoices
 $invoice = $invoiceController->getInvoiceByBookingId($booking_id);
 
+// Jika invoice tidak ditemukan, buat invoice baru
 if (!$invoice) {
-    die('Detail invoice tidak ditemukan. Pastikan data invoice sudah dibuat.');
+    $total_price = $invoiceController->calculateTotalPrice($booking_id); // Hitung harga total
+
+    if ($total_price <= 0) {
+        die('Gagal menghitung total harga. Silakan coba lagi.');
+    }
+
+    $invoiceCreated = $invoiceController->generateInvoice($booking_id, $total_price, $user_id);
+
+    if ($invoiceCreated) {
+        $invoice = $invoiceController->getInvoiceByBookingId($booking_id);
+    } else {
+        die('Gagal membuat invoice. Silakan coba lagi.');
+    }
 }
 ?>
 <!DOCTYPE html>
