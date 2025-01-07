@@ -1,5 +1,5 @@
 <?php
-require_once 'models/InvoiceModel.php';
+require_once('C:/xampp/htdocs/aplikasiweb_project/models/InvoiceModel.php');
 
 class InvoiceController {
     private $invoiceModel;
@@ -8,8 +8,8 @@ class InvoiceController {
         $this->invoiceModel = $invoiceModel;
     }
 
-    public function getInvoiceByBookingId($booking_id) {
-        return $this->invoiceModel->getInvoiceByBookingId($booking_id);
+    public function getInvoiceById($invoice_id) {
+        return $this->invoiceModel->getInvoiceById($invoice_id);
     }
 
     public function generateInvoice($booking_id, $total_price, $user_id) {

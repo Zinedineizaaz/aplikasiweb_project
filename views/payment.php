@@ -14,7 +14,7 @@ if (!$invoice_id) {
 }
 
 // Ambil data invoice berdasarkan invoice_id
-$invoice = $invoiceController->getInvoiceById($invoice_id);
+$invoice = $invoiceModel->getInvoiceById($invoice_id);  // Perbaikan di sini
 
 if (!$invoice) {
     die('Detail invoice tidak ditemukan. Silakan coba lagi.');
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo '<div class="alert alert-danger">Silakan pilih metode pembayaran.</div>';
     } else {
         // Perbarui status pembayaran di database
-        $paymentUpdated = $invoiceController->updatePaymentStatus($invoice_id, 'paid');
+        $paymentUpdated = $invoiceModel->updatePaymentStatus($invoice_id, 'paid');
 
         if ($paymentUpdated) {
             header('Location: index.php?page=confirmation&invoice_id=' . $invoice_id);
@@ -61,6 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <option value="">Pilih Metode</option>
                         <option value="credit_card">Kartu Kredit</option>
                         <option value="bank_transfer">Transfer Bank</option>
+                        <option value="gerai_transfer">Gerai</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-success">Bayar</button>

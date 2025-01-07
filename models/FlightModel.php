@@ -1,5 +1,5 @@
 <?php
-class Flight {
+class FlightModel {
     private $db;
 
     public function __construct($db) {

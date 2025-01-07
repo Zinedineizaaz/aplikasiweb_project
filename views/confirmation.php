@@ -10,20 +10,16 @@ $invoiceController = new InvoiceController($invoiceModel);
 $invoice_id = $_GET['invoice_id'] ?? null;
 
 if (!$invoice_id) {
-    die('ID Invoice tidak ditemukan. Silakan coba lagi.');
+    die('Invoice tidak ditemukan.');
 }
 
 // Ambil data invoice berdasarkan invoice_id
 $invoice = $invoiceController->getInvoiceById($invoice_id);
 
 if (!$invoice) {
-    die('Detail invoice tidak ditemukan. Silakan coba lagi.');
+    die('Detail invoice tidak ditemukan.');
 }
 
-// Pastikan status pembayaran adalah "paid"
-if ($invoice['payment_status'] !== 'paid') {
-    die('Pembayaran belum selesai. Silakan lakukan pembayaran terlebih dahulu.');
-}
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -38,33 +34,14 @@ if ($invoice['payment_status'] !== 'paid') {
     <h2>Konfirmasi Pembayaran</h2>
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Pembayaran Berhasil</h5>
-            <p>Terima kasih atas pembayaran Anda. Berikut adalah detail invoice:</p>
-            <table class="table">
-                <tr>
-                    <th>ID Invoice</th>
-                    <td><?= htmlspecialchars($invoice['id']) ?></td>
-                </tr>
-                <tr>
-                    <th>ID Pemesanan</th>
-                    <td><?= htmlspecialchars($invoice['booking_id']) ?></td>
-                </tr>
-                <tr>
-                    <th>Tanggal Invoice</th>
-                    <td><?= htmlspecialchars($invoice['invoice_date']) ?></td>
-                </tr>
-                <tr>
-                    <th>Total Harga</th>
-                    <td>Rp <?= number_format($invoice['total_price'], 2, ',', '.') ?></td>
-                </tr>
-                <tr>
-                    <th>Status Pembayaran</th>
-                    <td><span class="badge bg-success">Lunas</span></td>
-                </tr>
-            </table>
-            <a href="index.php?page=home" class="btn btn-primary mt-3">Kembali ke Beranda</a>
+            <h5 class="card-title">Invoice #<?= htmlspecialchars($invoice['id']) ?></h5>
+            <p><strong>Total Harga:</strong> Rp <?= number_format($invoice['total_price'], 2, ',', '.') ?></p>
+            <p><strong>Status Pembayaran:</strong> <?= htmlspecialchars($invoice['payment_status']) ?></p>
+            <p><strong>Metode Pembayaran:</strong> <?= htmlspecialchars($invoice['payment_method']) ?></p>
+            <p><strong>Waktu Pembayaran:</strong> <?= htmlspecialchars($invoice['invoice_date']) ?></p>
         </div>
     </div>
+    <a href="index.php" class="btn btn-primary mt-3">Kembali ke Beranda</a>
 </div>
 </body>
 </html>

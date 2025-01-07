@@ -13,7 +13,16 @@ class InvoiceModel {
         $stmt->execute();
     
         return $stmt->fetch(PDO::FETCH_ASSOC);
-    }    
+    }
+
+    public function getInvoiceById($invoice_id) {
+        // Menghapus referensi ke properti $this->table, dan langsung menggunakan nama tabel "invoices"
+        $query = "SELECT * FROM invoices WHERE id = :invoice_id LIMIT 1";
+        $stmt = $this->db->prepare($query);
+        $stmt->bindParam(':invoice_id', $invoice_id);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 
     public function createInvoice($booking_id, $total_price, $user_id) {
         $query = "INSERT INTO invoices (booking_id, total_price, user_id) VALUES (:booking_id, :total_price, :user_id)";
@@ -47,6 +56,5 @@ class InvoiceModel {
         $stmt->bindParam(':invoice_id', $invoice_id);
         return $stmt->execute();
     }
-    
 }
 ?>
