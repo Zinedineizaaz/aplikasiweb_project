@@ -13,6 +13,15 @@ switch ($page) {
     case 'home':
         require_once 'views/home.php';
         break;
+    case 'profile':
+        require_once 'views/profile.php';
+        break;
+    case 'update_profile':
+        require_once 'views/update_profile.php';
+        break;
+    case 'about_me':
+        require_once 'views/about_me.php';
+        break;
     case 'login':
         require_once 'views/login.php';
         break;
@@ -37,6 +46,7 @@ switch ($page) {
     case 'invoice_list':
         require_once 'views/list_invoices_pending.php';
         break;
+    
     default:
         echo "404 Page Not Found";
         break;

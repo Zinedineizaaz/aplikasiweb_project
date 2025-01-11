@@ -1,54 +1,51 @@
 <?php
 require_once 'libraries/database.php';
-require_once 'models/invoiceModel.php'; // Pastikan Anda memuat InvoiceModel
 
+if (!isset($_SESSION['user_id'])) {
+    header('Location: index.php?page=login');
+    exit;
+}
+
+$userId = $_SESSION['user_id'];
 $db = (new Database())->getConnection();
 
-// Ambil data penerbangan berdasarkan ID
-$flight_id = $_GET['flight_id'] ?? null;
-$flight = null;
-
-if ($flight_id) {
-    $query = "SELECT * FROM flights WHERE id = :flight_id";
-    $stmt = $db->prepare($query);
-    $stmt->bindParam(':flight_id', $flight_id);
-    $stmt->execute();
-    $flight = $stmt->fetch(PDO::FETCH_ASSOC);
-}
-
-if (!$flight) {
-    die('Penerbangan tidak ditemukan. Silakan pilih penerbangan yang valid.');
-}
-
-// Simpan data pemesanan
-$query = "INSERT INTO bookings (flight_id, user_id) VALUES (:flight_id, :user_id)";
+// Ambil data pengguna dari database
+$query = "SELECT name, email, profile_pic FROM users WHERE id = :user_id";
 $stmt = $db->prepare($query);
-$stmt->bindParam(':flight_id', $flight['id']);
-$stmt->bindParam(':user_id', $_SESSION['user_id']);
+$stmt->bindParam(':user_id', $userId);
 $stmt->execute();
 
-$booking_id = $db->lastInsertId();
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-// Membuat instance InvoiceModel dan membuat invoice
-$invoiceModel = new InvoiceModel($db);
-$total_price = $invoiceModel->getTotalPriceByBookingId($booking_id);
-$invoiceModel->createInvoice($booking_id, $total_price, $_SESSION['user_id']);
+if (!$user) {
+    echo "<div class='container mt-5'><div class='alert alert-danger'>Data pengguna tidak ditemukan.</div></div>";
+    exit;
+}
 
-// Ambil invoice ID untuk melanjutkan ke pembayaran
-$query = "SELECT * FROM invoices WHERE booking_id = :booking_id ORDER BY id DESC LIMIT 1";
-$stmt = $db->prepare($query);
-$stmt->bindParam(':booking_id', $booking_id);
-$stmt->execute();
-$invoice = $stmt->fetch(PDO::FETCH_ASSOC);
+// Fungsi untuk menghapus profil
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_profile'])) {
+    $deleteQuery = "DELETE FROM users WHERE id = :user_id";
+    $deleteStmt = $db->prepare($deleteQuery);
+    $deleteStmt->bindParam(':user_id', $userId);
 
+    if ($deleteStmt->execute()) {
+        // Logout pengguna setelah profil dihapus
+        session_destroy();
+        header('Location: index.php?page=signup');
+        exit;
+    } else {
+        echo "<div class='alert alert-danger'>Gagal menghapus profil. Silakan coba lagi.</div>";
+    }
+}
 ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Konfirmasi Tiket</title>
+    <title>Profil Pengguna</title>
     <style>
         body {
             background: #f2f3f5;
@@ -67,14 +64,6 @@ $invoice = $stmt->fetch(PDO::FETCH_ASSOC);
         }
         .navbar .nav-link:hover {
             color: #ffdd57 !important;
-        }
-        footer {
-            background-color: #f0f8ff;
-            color: #004080;
-            padding: 20px 0;
-        }
-        .alert {
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -111,23 +100,33 @@ $invoice = $stmt->fetch(PDO::FETCH_ASSOC);
     </div>
 </nav>
 <div class="container mt-5">
-    <h2>Konfirmasi Tiket</h2>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title"><?= htmlspecialchars($flight['maskapai']) ?></h5>
-            <p>Keberangkatan: <?= htmlspecialchars($flight['jadwal_keberangkatan']) ?></p>
-            <p>Tiba: <?= htmlspecialchars($flight['jadwal_kedatangan']) ?></p>
-            <p>Tujuan: <?= htmlspecialchars($flight['destinasi']) ?></p>
-            <p>Harga: Rp <?= number_format($flight['harga'], 2, ',', '.') ?></p>
-        </div>
+    <h1>Profil Pengguna</h1>
+    <!-- Tampilkan Foto Pengguna -->
+    <div class="text-center mb-4">
+        <?php if (!empty($user['profile_pic'])): ?>
+            <img src="<?= htmlspecialchars($user['profile_pic']) ?>" alt="Foto Profil" class="img-thumbnail" width="150" height="150">
+        <?php else: ?>
+            <img src="images/profilepics" alt="Foto Default" class="img-thumbnail" width="150" height="150">
+        <?php endif; ?>
     </div>
-    <form method="POST" action="index.php?page=payment&invoice_id=<?= htmlspecialchars($invoice['id']) ?>">
-        <input type="hidden" name="booking_id" value="<?= htmlspecialchars($booking_id) ?>">
-        <button type="submit" class="btn btn-success mt-3">Lanjutkan ke Pembayaran</button>
-    </form>
+    <table class="table table-bordered">
+        <tr>
+            <th>Nama</th>
+            <td><?= htmlspecialchars($user['name']) ?></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><?= htmlspecialchars($user['email']) ?></td>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-between mt-4">
+        <a href="index.php?page=update_profile" class="btn btn-warning">Update Profil</a>
+        <form method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus profil ini?');">
+            <button type="submit" name="delete_profile" class="btn btn-danger">Hapus Profil</button>
+        </form>
+    </div>
+    <a href="index.php?page=home" class="btn btn-primary mt-3">Kembali ke Home</a>
 </div>
-<footer>
-    <p>&copy; 2025 ZiluyaTravel. All rights reserved.</p>
-</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
