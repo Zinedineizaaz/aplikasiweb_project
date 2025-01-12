@@ -125,9 +125,7 @@ $invoice = $stmt->fetch(PDO::FETCH_ASSOC);
         <input type="hidden" name="booking_id" value="<?= htmlspecialchars($booking_id) ?>">
         <button type="submit" class="btn btn-success mt-3">Lanjutkan ke Pembayaran</button>
     </form>
+    <a href="index.php?page=buy_ticket" class="btn btn-primary">Kembali ke Beli Tiket</a>
 </div>
-<footer>
-    <p>&copy; 2025 ZiluyaTravel. All rights reserved.</p>
-</footer>
 </body>
 </html>

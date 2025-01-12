@@ -102,8 +102,5 @@ if (!$invoice) {
     </div>
     <a href="index.php" class="btn btn-primary mt-3">Kembali ke Beranda</a>
 </div>
-<footer>
-    <p>&copy; 2025 ZiluyaTravel. All rights reserved.</p>
-</footer>
 </body>
 </html>
