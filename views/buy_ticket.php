@@ -89,7 +89,7 @@
                     <th>Maskapai</th>
                     <th>Keberangkatan</th>
                     <th>Tujuan</th>
-                    <th>Waktu Keberangkatan</th>
+                    <th>Waktu Tiba</th>
                     <th>Harga</th>
                     <th>Aksi</th>
                 </tr>

@@ -28,6 +28,9 @@ switch ($page) {
     case 'signup':
         require_once 'views/signup.php';
         break;
+    case 'history':
+        require_once 'views/history.php';
+        break;
     case 'buy_ticket':
         require_once 'views/buy_ticket.php';
         break;
